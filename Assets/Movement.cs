@@ -38,6 +38,7 @@ public class Movement : MonoBehaviour
         Vector3 velocity = GetDirection() * Speed;
         velocity.y = _rigidbody.velocity.y;
         _rigidbody.velocity = velocity;
+        transform.forward = GetDirection();
     }
 
     private void OnDisable()

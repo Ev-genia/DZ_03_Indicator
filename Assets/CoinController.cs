@@ -20,7 +20,7 @@ public class CoinController : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             Coin = Coin + 1;
-            textComponent.text = Coin.ToString();
+            textComponent.text = "Coins: " + Coin.ToString();
             Debug.Log($"Coins: {Coin}");
         }
     }
